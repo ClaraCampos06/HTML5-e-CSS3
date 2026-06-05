@@ -1,6 +1,3 @@
-*{
-    padding: 5px;
-}
 
 table{
     border-collapse: collapse;
@@ -15,4 +12,7 @@ th, td{
 .titulo{
     background-color: #7a7474;
     color: #ffffff;
+}
+th{
+    padding: 7px;
 }
