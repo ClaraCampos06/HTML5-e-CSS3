@@ -1,31 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudo de iframe</title>
-    s
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
     <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site
-        <!--tamanho padrão iframe: 300x150px-->
 
-        <iframe src="https://www.cursoemvideo.com" scrolling="no">
-            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+    <p>
+      Acessando o site
+      <!--tamanho padrão iframe: 300x150px-->
 
-        </iframe>
-        para aprender a programar
+      <iframe
+        src="https://www.instagram.com/_claracampos_/embed/"
+        scrolling="no"
+      >
+        <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+      </iframe>
+      para aprender a programar
     </p>
 
-    <p>o repositório do guanabara no
-        <iframe src="https://gustavoguanabara.github.io">
-            <a href="https://gustavoguanabara.github.io" target="_blank">github</a>
-
-        </iframe>
-        também é bem legal
+    <p>
+      o repositório do guanabara no
+      <iframe src="https://gustavoguanabara.github.io">
+        <a href="https://gustavoguanabara.github.io" target="_blank">github</a>
+      </iframe>
+      também é bem legal
     </p>
-    
-</body>
+    <div>
+      <h1>teste de input</h1>
+      <input
+        type="button"
+        value="Clique aqui"
+        class="botao"
+        onclick="window.location.href = 'https://www.youtube.com/'"
+      />
+      <input type="checkbox" />
+      <input type="date" />
+      <input type="file" />
+      <input type="month" />
+      <input type="number" />
+      <input type="password" />
+      <input type="image" />
+    </div>
+  </body>
 </html>
