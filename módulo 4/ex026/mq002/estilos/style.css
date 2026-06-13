@@ -11,6 +11,8 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: rgb(61, 120, 70);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1{
