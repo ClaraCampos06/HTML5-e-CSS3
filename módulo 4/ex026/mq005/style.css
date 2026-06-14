@@ -1,11 +1,19 @@
 @charset "UTF-8";
+
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
 }
+
+:root{
+    --verde-escuro:rgb(55, 82, 55);
+    --bege: rgb(194, 177, 147);
+    --vinho: rgb(110, 45, 45);
+}
+
 body{
-    background-color: rgb(128, 168, 128);}
+    background-color: rgb(55, 82, 55);;}
 
 header{
     background-color: rgb(55, 82, 55);}
@@ -24,16 +32,31 @@ header > h1{
     color: rgb(194, 177, 147);
     font-size: 2.8em;
 }
+span#burg{
+    background-color: var(--bege);
+    color: rgb(55, 82, 55);;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burg:hover{
+    cursor: pointer;
+    background-color: var(--vinho);
+    color: rgb(194, 177, 147);
+}
 
 menu{
-    display: block;
+    display: none;
     
 }
 
 menu > ul{
     list-style-type: none;
-    
-    
+    }
+
+    menu li{
+        display: block;
     }
 
 
@@ -41,16 +64,16 @@ menu a{
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(91, 120, 81);
-    color: rgb(194, 177, 147);
+    background-color: var(--bege);
+    color: var(--verde-escuro);
     text-align: center;
-    border-top: 5px solid rgba(194, 177, 147, 0.472);
+    border-top: 5px solid var(--vinho);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.272);
 }
 
 menu a:hover{
-    background-color: rgb(194, 177, 147);
-    color: rgb(91, 120, 81);
+    background-color: var(--vinho);
+    color: var(--bege);
     transition: 0.7s;
     text-decoration: underline;}
 
@@ -58,7 +81,7 @@ main h2{
     text-align: center;
     padding: 20px;
     color: rgb(194, 177, 147);
-    background-color: rgb(55, 82, 55);
+    background-color: var(--vinho);
     width: auto;
     margin:20px;
     border-radius: 20px;
@@ -66,7 +89,8 @@ main h2{
 }
 
 main{
-width: 70vw;
+width: 90%;
+max-width: 900px;
 background-color: rgb(194, 177, 147);
 margin: auto;
 padding: 15px;
@@ -74,8 +98,6 @@ border-radius: 20px;
 margin-top: 25px;
 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.522);}
 
-article > h1{
-    padding-bottom: 15px;}
 
 article > p{
     text-align: justify;
@@ -108,9 +130,14 @@ footer a:hover{
     transition: 0.6s;
 
 }
-p{
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
+@media screen and (min-width: 900px) {
+
+    menu ul {
+        display: flex;
+    }
+
+    menu li {
+        flex: auto;
+    }
+
 }

@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
-        <h1>PROJETO DE ESTUDO MEDIA QUERY</h1>
-        <menu>
+        <h1>Projeto de Estudo sobre Media Queries</h1>
+        <span id="burg" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="item"> <!--posso trocar o "menu" por "nav" que deixa claro que é um menu de navegação-->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Páginas</a></li>
-                <li><a href="#">Localização</a></li>
-                <li><a href="#">Contato</a></li>
+                <strong>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="#">Localização</a></li>
+                    <li><a href="#">Contato</a></li>
+                </strong>
             </ul>
         </menu>
     </header>
@@ -30,7 +37,17 @@
         </article>
     </main>
     <footer>
-        Site criado por <a href="https://instagram.com/_claracampos_">Clara Campos</a>
+        Site criado por <a href="https://instagram.com/_claracampos_" target="_blank"><strong>Clara Campos</strong></a>
     </footer>
+    <script>
+        function clickMenu(){
+            
+            if (item.style.display == 'block'){
+                item.style.display = 'none'
+            } else {
+                item.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
