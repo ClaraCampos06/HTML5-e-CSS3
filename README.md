@@ -8,4 +8,4 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <a href="módulo 4/ex026/mq005/index.html">executar o ex026</a>
 
-<a href="PROGRAMAÇÃO/projeto-login/index.html">executar o projeto-login</a>
+<a href="projeto-login/index.html">executar o projeto-login</a>
