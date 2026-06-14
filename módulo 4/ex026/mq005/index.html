@@ -6,22 +6,23 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <style>
         
     </style>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Projeto de Estudo sobre Media Queries</h1>
         <span id="burg" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="item"> <!--posso trocar o "menu" por "nav" que deixa claro que é um menu de navegação-->
             <ul>
-                <strong>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Páginas</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">Contato</a></li>
-                </strong>
+                
+                    <li><a href="#"><strong>Home</strong></a></li>
+                    <li><a href="#"><strong>Páginas</strong></a></li>
+                    <li><a href="#"><strong>Localização</strong></a></li>
+                    <li><a href="#"><strong>Contato</strong></a></li>
+                
             </ul>
         </menu>
     </header>
@@ -36,9 +37,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste soluta, a similique reprehenderit quod itaque dolorum, esse ab fugit ex facere, consequatur dicta voluptatibus provident. Excepturi veniam nisi nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab perferendis nemo accusamus? Esse deserunt labore facilis, nobis explicabo distinctio aliquid quam voluptates ea, voluptatibus quidem consequatur necessitatibus ipsam consequuntur?</p>
         </article>
     </main>
-    <footer>
-        Site criado por <a href="https://instagram.com/_claracampos_" target="_blank"><strong>Clara Campos</strong></a>
-    </footer>
+    
     <script>
         function clickMenu(){
             
@@ -47,6 +46,15 @@
             } else {
                 item.style.display = 'block'
             }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+
         }
     </script>
 </body>

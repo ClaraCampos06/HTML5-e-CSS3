@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Tablets */
+@media screen and (min-width: 768px){
+
+    span#burg{
+        display: none; /*esconde o ícone hamburg em tela maior*/
+}
+
+    menu{
+        display:block; /*torna o menu visível novamente*/
+}
+
+    menu ul{
+        display: flex; /*itens do menu lado a lado*/  /*transforma menu vertical em horizontal*/
+    }
+
+    menu li{
+        flex: auto; /*distribui o espaço disponível entre os itens*/
+    }
+}
+
+
+
+/* Notebooks e desktops pequenos */
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+}
+
+
+
+/* Desktops grandes */
+@media screen and (min-width: 1200px){
+
+}
