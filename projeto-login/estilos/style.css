@@ -32,7 +32,11 @@ section#login{
     background-color: var(--bege);
     width: 250px;
     height: 600px;
-    border-radius: 25px;}
+    border-radius: 25px;
+
+    transition: width 0.7s, height 0.7s;
+    transition-timing-function: ease;
+}
 
 section#login > div#imagem{
     background: url(../imagens/fundo.jpg);
@@ -43,5 +47,6 @@ section#login > div#imagem{
 
 section#login > div#formulario{
     display: block;
+    padding: 10px;
 
 }
