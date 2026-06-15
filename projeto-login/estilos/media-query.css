@@ -3,7 +3,9 @@
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px){
 section#login{
-    width: 85vw;}
+    width: 85vw;
+    height: 300px;
+}
 
 section#login > div#imagem{
     width: 44%;
@@ -20,7 +22,9 @@ section#login > div#formulario{
 /* Notebooks e desktops pequenos */
 @media screen and (min-width: 992px) {
 section#login{
-    width: 990px;}
+    width: 990px;
+    height: 500px;
+}
 
 section#login > div#imagem {
     float: right;
