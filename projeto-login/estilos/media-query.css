@@ -23,8 +23,7 @@ section#login > div#formulario{
 @media screen and (min-width: 992px) {
 section#login{
     width: 990px;
-    height: 500px;
-}
+    height: 500px;}
 
 section#login > div#imagem {
     float: right;
@@ -33,12 +32,23 @@ section#login > div#imagem {
 
 section#login > div#formulario{
     float: left;
-    width: 50%;}
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;}
 
 div#formulario > p{
-    font-size: 1.5em;}
+    font-size: 1.5em;
+margin-bottom: 20px;}
 
 div#formulario > h1{
     font-size: 2.5em;
+    margin-bottom: 30px;
 }
+
+
+
 }

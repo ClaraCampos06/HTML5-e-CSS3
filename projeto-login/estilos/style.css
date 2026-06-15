@@ -23,8 +23,17 @@
     margin: 0px;
     box-sizing: border-box;}
 
+body{
+ background-image:linear-gradient(
+        135deg,
+        var(--verde-escuro),
+        black
+
+    )
+}
+
+
 body, html{
-    background-image:linear-gradient( rgb(55, 82, 55), rgba(0, 0, 0, 0.75));
     height: 100vh;
     width: 100vw;}
 
@@ -49,7 +58,7 @@ section#login{
     border-radius: 20px;
     transition: width 0.6s, height 0.6s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);}
+    transform: translate(-50%, -50%) scale(1.01);}
 
 section#login > div#imagem{
     background: url(../imagens/fundo.jpg);
@@ -73,6 +82,11 @@ div#formulario > h1:hover{
     animation: tracking-in-expand 1s ease;
 }
 
+form{
+    width: 100%;
+    margin: auto;
+}
+
 div#formulario > p{
     font-size: 0.8em;
     text-align: center;}
@@ -81,7 +95,7 @@ form > div.campo{
     background-color: var(--vinho);
     display: block;
     width: 100%;
-    height: 40px;
+    height: 44px;
     margin: 5px 0px;
     padding-right: 5px;
     border-radius: 8px;}
@@ -99,7 +113,7 @@ div.campo > input:focus-within{
     background-color: white;}
 
 div.campo > input{
-    background-color: var(--bege);
+    background-color: white;
     font-size: 1em;
     width: calc(100% - 45px) ;
     height: 70%;
@@ -113,17 +127,24 @@ form > input[type=submit]{
     font-size: 1.2em;
     width: 100%;
     height: 40px;
-    background-color: var(--bege);
+    background-color: var(--vinho);
     border: solid var(--vinho);
     border-radius: 8px;
-    cursor: pointer;}
+    cursor: pointer;
+    transition: .5s;
+    font-weight: lighter;
+    
+    color: white;
+    margin-top: 33px;
+}
 
 form > input[type=submit]:hover{
-    background-color: var(--vinho);
-    color: var(--bege);
-    border: solid var(--vinho);}
+    box-shadow: 0px 0px 9px black;
+    font-weight: bold;
+    }
 
 form > a.botao{
+    transition: .5s;
     display: block;
     text-align: center;
     font-size: 1em;
@@ -135,12 +156,25 @@ form > a.botao{
     text-decoration: none;
     color: black;
     margin-top: 6px;
-    padding-top: 6px;}
+    padding-top: 6px;
+}
 
 form > a.botao > span{
     font-size: 1em;
-    text-align: center;}
+    text-align: center;
+}
 
 form > a.botao:hover{
+    
     background-color: var(--vinho);
     color: var(--bege);}
+
+    input:focus{
+    outline: none;
+    box-shadow: inset 0px 0px 8px rgba(110, 45, 45, 0.565);
+}
+
+#imagem{
+    filter: saturate(1.3);
+    filter: contrast(1.2);
+}
