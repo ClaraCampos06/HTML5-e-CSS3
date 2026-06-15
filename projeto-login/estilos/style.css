@@ -51,10 +51,10 @@ div#formulario > h1{
     margin-bottom: 10px;}
 
 div#formulario > p{
-    font-size: 0.8emem;}
+    font-size: 0.8em;}
 
 form > div.campo{
-    background-color: var(--verde-escuro);
+    background-color: var(--vinho);
     display: block;
     width: 100%;
     height: 40px;
@@ -62,22 +62,23 @@ form > div.campo{
     border-radius: 5px;}
 
 div.campo > label{
-    display: none;
-}
+    display: none;}
+
 
 form > input[type=submit]{
     display: block;
-    font-size: 1em;
+    font-size: 1.2em;
     width: 100%;
     height: 40px;
-    background-color: var(--vinho);
-    border: none;
+    background-color: var(--bege);
+    border: solid var(--vinho);
     border-radius: 5px;
     cursor: pointer;}
 
 form > input[type=submit]:hover{
-    background-color: var(--verde-escuro);
-    color: var(--bege);}
+    background-color: var(--vinho);
+    color: var(--bege);
+    border: solid var(--vinho);}
 
 form > a.botao{
     display: block;
@@ -85,7 +86,8 @@ form > a.botao{
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: var(--vinho);
+    background-color: var(--bege);
+    border: solid var(--vinho);
     border-radius: 5px;
     text-decoration: none;
     color: black;
@@ -97,5 +99,5 @@ form > a.botao > span{
     text-align: center;}
 
 form > a.botao:hover{
-    background-color: var(--verde-escuro);
+    background-color: var(--vinho);
     color: var(--bege);}
