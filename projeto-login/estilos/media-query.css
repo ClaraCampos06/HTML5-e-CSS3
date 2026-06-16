@@ -3,8 +3,13 @@
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px){
 section#login{
+    
     width: 85vw;
-    height: 300px;
+    height: 370px;
+}
+
+section#login p{
+    font-size: 1.2em;
 }
 
 section#login > div#imagem{
@@ -16,6 +21,8 @@ section#login > div#formulario{
     width: 56%;
     float: right;}
 }
+
+
 
 
 
@@ -45,10 +52,15 @@ div#formulario > p{
 margin-bottom: 20px;}
 
 div#formulario > h1{
-    font-size: 2.5em;
+    font-size: 4em;
     margin-bottom: 30px;
 }
-
+#clara, a{
+    color: var(--vinho);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 }
