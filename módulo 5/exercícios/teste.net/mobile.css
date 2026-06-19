@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* TABLETS */
+
+@media screen and (max-width: 992px){
+
+    .hero h1{
+        font-size: 4rem;
+    }
+
+    .grid-chopes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-cards{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        min-width: 250px;
+    }
+
+    .depoimentos-container{
+        flex-direction: column;
+    }
+}
+
+
+/* CELULARES */
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    #hamburguer{
+        display: block;
+        color: white;
+    }
+
+    nav{
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        margin-top: 1rem;
+
+        background-color: rgba(0,0,0,.95);
+
+        padding: 1rem 0;
+    }
+
+    nav a{
+        padding: .8rem;
+    }
+
+    .hero{
+        padding: 1rem;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    section{
+        padding: 4rem 1rem;
+    }
+
+    .sobre-cards{
+        flex-direction: column;
+    }
+
+    .grid-chopes{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .foto{
+        height: 180px;
+    }
+
+    .depoimentos-container{
+        flex-direction: column;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        font-size: 1.6rem;
+    }
+
+    .hero h1{
+        font-size: 2.4rem;
+    }
+
+    .hero p{
+        font-size: .95rem;
+    }
+
+    .btn{
+        padding: .8rem 1.5rem;
+    }
+
+    section h2{
+        font-size: 2rem;
+    }
+
+    .card,
+    .chopp,
+    .depoimento{
+        padding: 1.5rem;
+    }
+}

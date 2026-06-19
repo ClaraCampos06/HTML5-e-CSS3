@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Beer | Choperia Artesanal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            🍺 Golden Beer
+        </div>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#chopes">Chopes</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div id="hamburguer" onclick="abrirMenu()">
+            ☰
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                O Melhor Chopp Artesanal da Cidade
+            </h1>
+
+            <p>
+                Sabores únicos, ambiente aconchegante e experiências inesquecíveis.
+            </p>
+
+            <a href="#contato" class="btn">
+                Reservar Mesa
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre" class="sobre">
+
+        <h2>Sobre Nós</h2>
+
+        <p>
+            A Golden Beer nasceu da paixão por cervejas artesanais.
+            Nosso objetivo é oferecer chopes selecionados, petiscos especiais
+            e um ambiente perfeito para reunir amigos e família.
+        </p>
+
+        <div class="sobre-cards">
+
+            <div class="card">
+                <h3>🍺 +20 Torneiras</h3>
+                <p>Variedade de estilos nacionais e importados.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎵 Música ao Vivo</h3>
+                <p>Shows semanais para animar suas noites.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍔 Petiscos Premium</h3>
+                <p>Combinações perfeitas para acompanhar seu chopp.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CHOPES -->
+
+    <section id="chopes" class="chopes">
+
+        <h2>Chopes em Destaque</h2>
+
+        <div class="grid-chopes">
+
+            <article class="chopp">
+                <h3>Pilsen Artesanal</h3>
+                <p>Leve, refrescante e equilibrada.</p>
+                <span>R$ 12</span>
+            </article>
+
+            <article class="chopp">
+                <h3>IPA Intensa</h3>
+                <p>Amargor marcante e aroma cítrico.</p>
+                <span>R$ 16</span>
+            </article>
+
+            <article class="chopp">
+                <h3>Stout Cremosa</h3>
+                <p>Notas de café e chocolate.</p>
+                <span>R$ 18</span>
+            </article>
+
+            <article class="chopp">
+                <h3>Weiss Alemã</h3>
+                <p>Toques frutados e espuma abundante.</p>
+                <span>R$ 15</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section id="galeria" class="galeria">
+
+        <h2>Galeria</h2>
+
+        <div class="grid-galeria">
+
+            <div class="foto">🍺</div>
+            <div class="foto">🍔</div>
+            <div class="foto">🎵</div>
+            <div class="foto">🥨</div>
+            <div class="foto">🍻</div>
+            <div class="foto">🌙</div>
+
+        </div>
+
+    </section>
+
+    <!-- DEPOIMENTOS -->
+
+    <section class="depoimentos">
+
+        <h2>O Que Dizem Nossos Clientes</h2>
+
+        <div class="depoimentos-container">
+
+            <div class="depoimento">
+                <p>
+                    "Melhor IPA que já provei. Ambiente incrível!"
+                </p>
+                <h4>— Carlos</h4>
+            </div>
+
+            <div class="depoimento">
+                <p>
+                    "Excelente atendimento e ótimos petiscos."
+                </p>
+                <h4>— Mariana</h4>
+            </div>
+
+            <div class="depoimento">
+                <p>
+                    "Lugar perfeito para reunir os amigos."
+                </p>
+                <h4>— Felipe</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="contato">
+
+        <h2>Reserve Sua Mesa</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Seu nome"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Seu e-mail"
+                required
+            >
+
+            <textarea
+                placeholder="Sua mensagem"
+                rows="5"
+            ></textarea>
+
+            <button type="submit">
+                Enviar Reserva
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>🍺 Golden Beer</h3>
+
+        <p>
+            Desde 2026 servindo experiências inesquecíveis.
+        </p>
+
+        <p>
+            © Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

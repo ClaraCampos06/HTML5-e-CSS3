@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+:root{
+    --preto: #1A1A1A;
+    --dourado: #D4A017;
+    --creme: #F5E6C8;
+    --marrom: #4E342E;
+    --branco: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--preto);
+    color: var(--branco);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    z-index: 999;
+}
+
+.logo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--dourado);
+}
+
+nav{
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: var(--dourado);
+}
+
+#hamburguer{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1920&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text{
+    max-width: 800px;
+}
+
+.hero h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: var(--dourado);
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--dourado);
+    color: var(--preto);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}
+
+/* SEÇÕES */
+
+section{
+    padding: 6rem 2rem;
+}
+
+section h2{
+    text-align: center;
+    color: var(--dourado);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* SOBRE */
+
+.sobre{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sobre > p{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.sobre-cards{
+    display: flex;
+    gap: 2rem;
+}
+
+.card{
+    flex: 1;
+
+    background-color: #242424;
+
+    padding: 2rem;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    color: var(--dourado);
+    margin-bottom: 1rem;
+}
+
+/* CHOPES */
+
+.grid-chopes{
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.5rem;
+}
+
+.chopp{
+    background-color: #242424;
+
+    padding: 2rem;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.chopp:hover{
+    transform: scale(1.03);
+}
+
+.chopp h3{
+    color: var(--dourado);
+    margin-bottom: 1rem;
+}
+
+.chopp span{
+    display: block;
+    margin-top: 1rem;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    color: var(--dourado);
+}
+
+/* GALERIA */
+
+.grid-galeria{
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+.foto{
+    height: 220px;
+
+    background-color: #242424;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+
+    border-radius: 15px;
+
+    transition: .3s;
+}
+
+.foto:hover{
+    transform: scale(1.03);
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos-container{
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.depoimento{
+    flex: 1;
+
+    background-color: #242424;
+
+    padding: 2rem;
+
+    border-radius: 15px;
+}
+
+.depoimento h4{
+    margin-top: 1rem;
+    color: var(--dourado);
+}
+
+/* CONTATO */
+
+form{
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+input,
+textarea{
+    padding: 1rem;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1rem;
+}
+
+button{
+    padding: 1rem;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--dourado);
+
+    color: var(--preto);
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #111;
+
+    text-align: center;
+
+    padding: 2rem;
+}
+
+footer h3{
+    color: var(--dourado);
+    margin-bottom: .5rem;
+}
