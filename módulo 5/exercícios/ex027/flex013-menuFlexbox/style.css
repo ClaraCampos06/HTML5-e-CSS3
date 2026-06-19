@@ -6,19 +6,19 @@
 
 :root{
     --bege:rgb(230, 209, 170);
-    --azul-escuro:rgb(34, 103, 103);
-    --azul-claro:rgb(172, 182, 186);}
+    --azul-claro:rgb(34, 103, 103);
+    --azul-escuro:rgb(23, 62, 74);}
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     height: 100vh;
     width: 100vw;}
 
 header{
-    background-color: var(--bege) ;
-    color: var(--azul-escuro);
+    background-color: var(--azul-escuro) ;
+    color: var(--bege);
     padding: 10px;
     display: flex;
     flex-flow: row wrap;
@@ -26,7 +26,8 @@ header{
     align-items: center;}
 
 header > h1{
-    flex: 0 0 200px;}
+    flex: 0 0 200px;
+text-shadow: 0px 0px 4px black;}
 
 header > nav{
     display: flex;
@@ -34,22 +35,23 @@ header > nav{
     justify-content: flex-end;}
 
 header > nav > a {
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     color: var(--bege);
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
-    text-align: center;}
+    text-align: center;
+transition: .4s;}
 
 header > nav > a:hover{
     background-color: var(--bege);
     color: var(--azul-escuro);
-    transition: .4s;
-    box-shadow: 0px 0px 7px black;}
+    
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);}
 
 main{
-    background-color: var(--azul-claro);
+    background-color: var(--bege);
     text-align: justify;
     margin: 20px;
     border-radius: 10px;
@@ -60,4 +62,4 @@ main h2{
     color: var(--azul-escuro);
     margin-bottom: 20px;}
 
-@media screen and ()
+
