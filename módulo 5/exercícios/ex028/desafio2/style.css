@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows:80px 40px 1fr 40px ;
+    height: 98vh;
+    width: 98vw;
+    gap: 10px;
+    text-align: center;}
+
+.caixa1{
+    border: 2px solid red; 
+    grid-area: 1 / 1 / 2 / -1;}
+
+.caixa2{
+    border: 2px solid red; 
+    grid-area: 2 / 1 / 3 / -1;}
+
+.caixa3{
+    border: 2px solid red; 
+    grid-area: 3 / 1 / -2 / -2;}
+
+.caixa4{
+    border: 2px solid red; 
+    grid-area: 3 / -2 / -2 / -1;}
+    
+.caixa5{
+    border: 2px solid red; 
+    grid-area: -2 / 1 / -1 / -1;}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;}
+
+.caixa1{
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: pink}
+
+.caixa2{
+    grid-area: 2 / 1 / 4 / 3;
+    background-color: aquamarine;}
+
+.caixa3{
+    grid-area: 2 / 3 / 4 / 5;
+    background-color: rgb(132, 180, 142);}
+
+/*
+ORDEM GRID AREA:
+ROW-START
+COLUMN-START
+ROW-END
+COLUMN-END
+*/
