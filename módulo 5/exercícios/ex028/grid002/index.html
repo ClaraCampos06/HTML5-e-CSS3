@@ -7,12 +7,18 @@
     <style>
         .container{
         display: grid;
-        grid-template: repeat(4, 100px) / repeat(4, auto);
+        border: 3px solid red;
+        height: 250px;
+        grid-template: repeat(3, auto) / repeat(3, auto);
+        gap: 10px;
+        place-items: start center;
+        place-content: space-between end;
 
     }
 
         .item{
-            border: 3px dashed blue;
+            border: 3px solid blue;
+            padding: 5px;
 
         }
     </style>
